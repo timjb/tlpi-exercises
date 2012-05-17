@@ -1,6 +1,6 @@
 include ../Makefile.inc
 
-GEN_EXE = tee
+GEN_EXE = tee cp_holes
 
 #LINUX_EXE = 
 
