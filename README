@@ -1,0 +1,6 @@
+Building
+========
+
+1. Download the source code for the example programs from http://man7.org/tlpi/code/index.html
+2. Place this folder in the main directory
+3. Run `make`
