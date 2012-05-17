@@ -1,6 +1,6 @@
 include ../Makefile.inc
 
-GEN_EXE = tee cp_holes
+GEN_EXE = tee cp_holes append_seek_write
 
 LINUX_EXE = large_file2
 
