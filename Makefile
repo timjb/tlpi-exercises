@@ -2,7 +2,7 @@ include ../Makefile.inc
 
 GEN_EXE = tee cp_holes
 
-#LINUX_EXE = 
+LINUX_EXE = large_file2
 
 EXE = ${GEN_EXE} ${LINUX_EXE}
 
