@@ -43,4 +43,6 @@ int main (int argc, char *argv[]) {
   if (close(fd) == -1) {
     errExit("close input");
   }
+
+  exit(EXIT_SUCCESS);
 }
