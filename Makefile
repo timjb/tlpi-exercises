@@ -1,6 +1,7 @@
 include ../Makefile.inc
 
-GEN_EXE = tee cp_holes append_seek_write atomic_append dup_clone dup_common_attrs
+GEN_EXE = tee cp_holes append_seek_write atomic_append dup_clone dup_common_attrs \
+          readv_writev_clone
 
 LINUX_EXE = large_file2
 

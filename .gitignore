@@ -5,3 +5,4 @@ append_seek_write
 atomic_append
 dup_clone
 dup_common_attrs
+readv_writev_clone
