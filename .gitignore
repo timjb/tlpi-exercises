@@ -7,3 +7,4 @@ dup_clone
 dup_common_attrs
 readv_writev_clone
 longjmp_error
+my_env
