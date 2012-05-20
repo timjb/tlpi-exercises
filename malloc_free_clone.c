@@ -21,7 +21,6 @@ extern char end;
 
 void *my_malloc (size_t);
 void my_free(void *);
-void print_blk_list(void);
 
 struct blk {
   size_t size;
@@ -31,15 +30,6 @@ struct blk {
 
 struct blk *first = NULL;
 struct blk *last = NULL;
-
-void print_blk_list (void) {
-  struct blk *curr = first;
-  while (curr != NULL) {
-    printf("%10p %lld, ", (void *) curr, (long long) curr->size);
-    curr = curr->next;
-  }
-  printf("\n");
-}
 
 void *my_malloc (size_t size) {
   size_t required_size = size + sizeof(struct blk);
@@ -74,7 +64,6 @@ void *my_malloc (size_t size) {
 }
 
 void my_free (void *ptr) {
-  print_blk_list();
   struct blk *blk_ptr = ((struct blk *) ptr) - 1;
 
   if (first == NULL) {
