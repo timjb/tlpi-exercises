@@ -1,7 +1,7 @@
 include ../Makefile.inc
 
 GEN_EXE = tee cp_holes append_seek_write atomic_append dup_clone dup_common_attrs \
-          readv_writev_clone longjmp_error my_env free_and_sbrk
+          readv_writev_clone longjmp_error my_env free_and_sbrk malloc_free_clone
 
 LINUX_EXE = large_file2
 

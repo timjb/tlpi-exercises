@@ -9,3 +9,4 @@ readv_writev_clone
 longjmp_error
 my_env
 free_and_sbrk
+malloc_free_clone
