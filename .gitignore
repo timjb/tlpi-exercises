@@ -11,3 +11,4 @@ my_env
 free_and_sbrk
 malloc_free_clone
 getpwnam_clone
+initgroups_clone
