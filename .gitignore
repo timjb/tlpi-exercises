@@ -13,3 +13,4 @@ malloc_free_clone
 getpwnam_clone
 initgroups_clone
 list_processes_for_user
+pstree
