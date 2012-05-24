@@ -12,3 +12,4 @@ free_and_sbrk
 malloc_free_clone
 getpwnam_clone
 initgroups_clone
+list_processes_for_user
