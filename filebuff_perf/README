@@ -1,0 +1,4 @@
+Exercise 13-1:
+Measure the performance of copying a file with 100,000,000 bytes.
+The file 1024.txt contains the times for copying with a 1024 bytes large buffer.
+The 's' in 1024.txt means that O_SYNC was specified when opening the file.
