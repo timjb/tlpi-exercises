@@ -16,3 +16,4 @@ list_processes_for_user
 pstree
 processes_open_file
 tail
+eaccess_clone
