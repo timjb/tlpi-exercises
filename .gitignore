@@ -19,3 +19,4 @@ tail
 eaccess_clone
 chmod_a_plus_rX
 chattr_clone
+setfattr_clone
