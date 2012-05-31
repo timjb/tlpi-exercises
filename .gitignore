@@ -22,3 +22,4 @@ chattr_clone
 setfattr_clone
 acl_perms
 acl_perms.o
+realpath_clone
