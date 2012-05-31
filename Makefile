@@ -6,7 +6,7 @@ GEN_EXE = tee cp_holes append_seek_write atomic_append dup_clone dup_common_attr
           getcwd_clone
 
 LINUX_EXE = large_file2 list_processes_for_user pstree processes_open_file \
-          eaccess_clone chattr_clone setfattr_clone acl_perms
+          eaccess_clone chattr_clone setfattr_clone acl_perms nftw_statistics
 
 EXE = ${GEN_EXE} ${LINUX_EXE}
 
