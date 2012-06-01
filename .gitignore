@@ -25,3 +25,4 @@ acl_perms.o
 realpath_clone
 getcwd_clone
 nftw_statistics
+inotify_recursive
