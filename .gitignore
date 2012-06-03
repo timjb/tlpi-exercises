@@ -27,3 +27,4 @@ getcwd_clone
 nftw_statistics
 inotify_recursive
 signal_ign_demo
+sigaction_nodefer
