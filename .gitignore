@@ -28,3 +28,4 @@ nftw_statistics
 inotify_recursive
 signal_ign_demo
 sigaction_nodefer
+sigaction_resethand
