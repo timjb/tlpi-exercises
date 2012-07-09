@@ -30,3 +30,4 @@ signal_ign_demo
 sigaction_nodefer
 sigaction_resethand
 abort_clone
+sigcont_blocked
