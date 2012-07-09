@@ -31,3 +31,4 @@ sigaction_nodefer
 sigaction_resethand
 abort_clone
 sigcont_blocked
+realtime_plus_standard_signals
