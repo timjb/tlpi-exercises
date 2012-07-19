@@ -9,13 +9,16 @@ GEN_EXE = tee cp_holes append_seek_write atomic_append dup_clone dup_common_attr
 
 LINUX_EXE = large_file2 list_processes_for_user pstree processes_open_file \
           eaccess_clone chattr_clone setfattr_clone acl_perms nftw_statistics \
-          inotify_recursive
+          inotify_recursive t_clock_nanosleep_abs
 
 EXE = ${GEN_EXE} ${LINUX_EXE}
 
 all : ${EXE}
 
 allgen : ${GEN_EXE}
+
+t_clock_nanosleep_abs : t_clock_nanosleep_abs.o
+	${CC} -o $@ t_clock_nanosleep_abs.o ${CFLAGS} ${LDLIBS} ${LINUX_LIBRT}
 
 acl_perms : acl_perms.o
 	${CC} -o $@ acl_perms.o ${CFLAGS} ${LDLIBS} ${LINUX_LIBACL}
