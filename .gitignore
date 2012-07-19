@@ -33,3 +33,4 @@ abort_clone
 sigcont_blocked
 realtime_plus_standard_signals
 sig_speed_sigwaitinfo
+alarm_clone
