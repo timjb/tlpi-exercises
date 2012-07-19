@@ -36,3 +36,5 @@ sig_speed_sigwaitinfo
 alarm_clone
 t_clock_nanosleep_abs
 t_clock_nanosleep_abs.o
+ptmr_sigev_signal_sigwaitinfo
+ptmr_sigev_signal_sigwaitinfo.o

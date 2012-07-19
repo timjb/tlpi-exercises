@@ -9,7 +9,7 @@ GEN_EXE = tee cp_holes append_seek_write atomic_append dup_clone dup_common_attr
 
 LINUX_EXE = large_file2 list_processes_for_user pstree processes_open_file \
           eaccess_clone chattr_clone setfattr_clone acl_perms nftw_statistics \
-          inotify_recursive t_clock_nanosleep_abs
+          inotify_recursive t_clock_nanosleep_abs ptmr_sigev_signal_sigwaitinfo
 
 EXE = ${GEN_EXE} ${LINUX_EXE}
 
@@ -22,6 +22,9 @@ t_clock_nanosleep_abs : t_clock_nanosleep_abs.o
 
 acl_perms : acl_perms.o
 	${CC} -o $@ acl_perms.o ${CFLAGS} ${LDLIBS} ${LINUX_LIBACL}
+
+ptmr_sigev_signal_sigwaitinfo: ptmr_sigev_signal_sigwaitinfo.o
+	${CC} -o $@ ptmr_sigev_signal_sigwaitinfo.o ${CFLAGS} ${LDLIBS} ${LINUX_LIBRT}
 
 clean : 
 	${RM} ${EXE} *.o
