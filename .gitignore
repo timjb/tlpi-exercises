@@ -38,3 +38,4 @@ t_clock_nanosleep_abs
 t_clock_nanosleep_abs.o
 ptmr_sigev_signal_sigwaitinfo
 ptmr_sigev_signal_sigwaitinfo.o
+vfork_closing_file_descriptor
