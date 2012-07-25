@@ -5,7 +5,8 @@ GEN_EXE = tee cp_holes append_seek_write atomic_append dup_clone dup_common_attr
           getpwnam_clone initgroups_clone tail chmod_a_plus_rX realpath_clone \
           getcwd_clone signal_ign_demo sigaction_nodefer sigaction_resethand \
           abort_clone sigcont_blocked realtime_plus_standard_signals \
-          sig_speed_sigwaitinfo alarm_clone vfork_closing_file_descriptor
+          sig_speed_sigwaitinfo alarm_clone vfork_closing_file_descriptor \
+          adopted_processes
 
 LINUX_EXE = large_file2 list_processes_for_user pstree processes_open_file \
           eaccess_clone chattr_clone setfattr_clone acl_perms nftw_statistics \
