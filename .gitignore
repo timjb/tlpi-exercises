@@ -40,3 +40,4 @@ ptmr_sigev_signal_sigwaitinfo
 ptmr_sigev_signal_sigwaitinfo.o
 vfork_closing_file_descriptor
 adopted_processes
+zombie_parent
