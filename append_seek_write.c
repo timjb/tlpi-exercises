@@ -16,5 +16,6 @@ int main (int argc, char *argv[]) {
   if (write(fd, s, strlen(s)) != strlen(s)) { errExit("write 1"); }
   if (lseek(fd, 0, SEEK_SET) == -1) { errExit("seeking"); }
   if (write(fd, t, strlen(t)) != strlen(t)) { errExit("write 2"); }
+  if (close(fd) == -1) { errExit("close output"); }
   exit(EXIT_SUCCESS);
 }
