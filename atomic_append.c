@@ -24,4 +24,10 @@ int main (int argc, char *argv[]) {
       errExit("write byte a");
     }
   }
+
+  if (close(fd) == -1) { 
+      errExit("close output"); 
+  }
+
+  exit(EXIT_SUCCESS);
 }
